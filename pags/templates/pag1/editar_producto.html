@@ -25,7 +25,7 @@
             <ul class="Menu">
                 <li><a class="btn btn-primary" href="{% url 'pag3' %}" role="button">Iniciar Sesion</a></li>
                 <li><a class="btn btn-primary" href="{% url 'crear_usuario' %}" role="button">Registrarse</a></li>
-                <li><a class="btn btn-primary" href="#" role="button" ><img class="carrito" src="{% static 'img/carro.png' %}"></a></li>
+                <li><a class="btn btn-primary" href="{% url 'carrito' %}" role="button" ><img class="carrito" src="{% static 'img/carro.png' %}"></a></li>
             </ul>
             </section>
     
@@ -40,7 +40,7 @@
                 <li><a class="btn btn-primary" href="#" role="button">Categorias</a></li>
                 <li><a class="btn btn-primary" href="{% url 'pag2' %}" role="button">Acerca de...</a></li>
                 <li><a class="btn btn-primary" href="{% url 'pag1' %}" role="button">Contacto</a></li>
-                <li><a class="btn btn-primary" href="#" role="button">Nuevo producto</a></li>
+                <li><a class="btn btn-primary" href="{% url 'nuevo_producto' %}" role="button">Nuevo producto</a></li>
                 <li><nav class="navbar navbar-light bg-light">
                     <div>
                       <form class="d-flex">
