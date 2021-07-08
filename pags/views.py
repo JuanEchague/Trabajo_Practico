@@ -10,3 +10,21 @@ def pag2(request):
 
 def pag3(request):
     return render(request, "pag1/login.html")
+
+def crear_usuario(request):
+    return render(request, "pag1/crear_usuario.html")
+
+def busqueda(request):
+    return render(request, "pag1/busqueda.html")
+
+def producto(request):
+    return render(request, "pag1/producto.html")
+
+def nuevo_producto(request):
+    return render(request, "pag1/nuevo_producto.html")
+
+def editar_producto(request):
+    return render(request, "pag1/editar_producto.html")
+
+def carrito(request):
+    return render(request, "pag1/carrito.html")

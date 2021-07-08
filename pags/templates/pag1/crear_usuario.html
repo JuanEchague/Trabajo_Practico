@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jaguarete ka'a S.A</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tienda de Jaguarete Kaa S.A">
+    <meta name="keyword" content="Tienda Jaguarete">
+    <meta name="author" content="Guillermo Matzke y Juan Echagüe">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="icon" href="{% static 'img/icono.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+
+<body>
+    <section class="pagina">
+        <!--enacabezado-->
+        <header class="row">
+            <section class="col-xs-7 col-sm-7 col-md-8 col-lg-8">
+            <img class="logo" src="{% static 'img/logo.png' %}">
+            </section>
+            <section class="barra1 col-xs-5 col-sm-5 col-md-4 col-lg-4">
+            <ul class="Menu">
+                <li><a class="btn btn-primary" href="{% url 'pag3' %}" role="button">Iniciar Sesion</a></li>
+            </ul>
+            </section>
+    
+        </header>
+        <hr>
+        <!--crear usuario-->
+
+        <article class="log">
+            <h1 class="acceso logg">Registrarse</h1>
+            <div class="form-floating mb-3 logg">
+              <p class="s1">Usuario</p>
+              <input type="User" class="form-control" id="floatingInput" placeholder="Usuario" required>
+              
+            </div>
+            <div class="form-floating mb-3 logg">
+                <p class="s1">Correo</p>
+                <input type="email" class="form-control" id="floatingInput" placeholder="E-mail@ejemplo.com" required>
+                
+              </div>
+            <div class="form-floating logg">
+              <p class="s1">Contraseña</p>
+              <input type="Contraseña" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
+             
+            </div>
+            <div class="form-floating logg">
+                <p class="s1">Repetir Contraseña</p>
+                <input type="Contraseña" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
+               
+              </div>
+            <div class="logg">
+            <input type="submit" class="btn btn-primary s1" value="guardar">
+            </div>
+          </article>
+
+        <!--Pie de pagina-->
+        <hr>
+        <footer class="pie">
+            <h3 class="pie">Jaguarete Ka'a S.A, E-Comerce. Todos los derechos reservados a © Guillermo Matzke y Juan Echagüe ©</h3>
+    
+        </footer>
+    </section>
+</body>
+    
+
+</html>
